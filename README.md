@@ -7,15 +7,11 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the MULTI-ROM trees, use a command like this:
 
-    repo init -u git://github.com/MR-op3/manifest.git -b mr
+    repo init -u git://github.com/Multirom-mi4i/manifest.git -b mr
 
 Then to sync up:
 
-    repo sync
-
-Then to build for the M8:
-
-     ./mr-wt88047.sh
+    repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
 
 Or for other devices, the old-fashioned way:
      
